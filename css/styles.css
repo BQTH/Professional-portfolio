@@ -1,0 +1,193 @@
+/*Import roboto black from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+nav{
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    position: fixed;
+}
+
+.nav-wrapper{
+    padding-top: 20px;
+}
+
+a.active{
+    color: #FFBA52;
+}
+
+a.default{
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    	to right,
+	    #FFBA52,
+	    #FFBA52 50%,
+	    white 50%);
+	    background-size: 200% 100%;
+	    background-position: 100%;
+}
+
+a.default:hover {
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+  }
+
+.logo{
+   text-decoration: underline; 
+   font-size: 35px;
+}
+
+section#main{
+    background-image: url("../assets/beach-2.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+section#Schoolcord{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/nwiteratie-2.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+section#Krs{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/nwiteratie-1.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+section#Smartsmoker{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/nwiteratie-3.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+section#Nrgphotos{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/DSC03521.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+section#Nachtwakers{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/DSC02880-Edit.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+span.socials{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.mycontainer{
+    width: 90%;
+    margin: auto;
+}
+
+.valign-wrapper{
+    width: 100%;
+    height: calc(100vh - 150.2px);
+}
+
+i#socials{
+    padding-bottom: 10px;
+}
+/*
+div#socialdiv{
+    width: 90%;
+    text-align: center;
+}*/
+
+h6{
+    text-align: right;
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 700px) {
+    h6{text-align: left;}
+    section#main{
+        background-image: url("../assets/beach-1.jpg");
+    }
+  }
+
+  /* Pagination */
+  #pagination {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 30px;
+    list-style: none;
+  }
+
+  @media (max-width: 640px) 
+{
+    #pagination
+    {
+        display: none;
+    }
+}
+
+  #pagination li {
+    position: relative;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  #pagination li:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  #pagination a {
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+
+  body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5) {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+
+  #projecttitleschoolcord{
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+  }
