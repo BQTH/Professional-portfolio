@@ -1,13 +1,11 @@
 import React from 'react'
 import Socials from './../components/socials/socials'
-import Nav from './../components/nav/nav'
-
 function Home() {
     return (
         <div>
             <section id="main">
                 <div>
-                    <Nav />
+
                     <Socials />
 
                     <div class="oneline">

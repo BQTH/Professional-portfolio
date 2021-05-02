@@ -38,11 +38,19 @@
 }
 */
 
+body{
+  box-sizing: border-box !important;
+  display: inline-block !important;
+}
+
 nav{
   background-color: transparent;
   box-shadow: none;
   padding-left: 25px;
   padding-right: 25px;
+  position: fixed;
+  top: 0;
+
 }
 
 nav, .logo, nav a.nav-link{
@@ -85,4 +93,33 @@ section#main{
   right: 25px;
   top: 50vh;
   color: rgba(255, 255, 255, 0.75) ;
+}
+
+.projectimg{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width: 100vw;
+  height: 100vh;
+}
+
+.contentbox{
+  height: 100vh;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2{
+  text-align: center;
+}
+
+p{text-align: center;}
+
+.valign-wrapper{
+  width: 100%;
+  height: calc(100vh - 150.2px);
+}
+
+.project-img{
+  width: 200px;
 }

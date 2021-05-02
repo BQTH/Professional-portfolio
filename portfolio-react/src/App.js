@@ -3,11 +3,12 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home'
 import Designs from './pages/Designs'
+import Nav from './components/nav/nav'
 
 function App() {
   return (
     <div className="App">
-     
+     <Nav/>
      <div className="content">
        <Router>
           <Switch>

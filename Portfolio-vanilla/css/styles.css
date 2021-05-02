@@ -110,10 +110,6 @@ span.socials{
     margin: auto;
 }
 
-.valign-wrapper{
-    width: 100%;
-    height: calc(100vh - 150.2px);
-}
 
 i#socials{
     padding-bottom: 10px;

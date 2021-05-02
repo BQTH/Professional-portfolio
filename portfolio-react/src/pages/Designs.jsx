@@ -1,10 +1,12 @@
 import React from 'react'
-import Nav from './../components/nav/nav'
+import Projects from './../components/projectpreview/projects'
 
 function Designs() {
     return (
         <div>
-            <Nav/>
+            
+            <Projects/>
+            
         </div>
     )
 }
